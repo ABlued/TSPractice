@@ -1,4 +1,7 @@
 본 소스는 인프런 타입스크립트 입문 기초부터 실전까지의 강의를 듣고 직접 실습을 진행하는 코드입니다.
+아래 이미지를 클릭하시면 본 강의로 이동됩니다.
+
+
 
 [![typescript-beginner](https://joshua1988.github.io/images/posts/web/inflearn/typescript-beginner-kor.png)](https://www.inflearn.com/course/%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%9E%85%EB%AC%B8?inst=f1ae9299&utm_source=blog&utm_medium=githubio&utm_campaign=captianpangyo&utm_term=banner)
 
