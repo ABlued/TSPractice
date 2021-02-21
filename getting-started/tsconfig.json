@@ -1,0 +1,7 @@
+{
+    "compilerOptions": {        //컵파일 옵션
+        "allowJs": true,        //이 폴더에 js파일을 허용한다.
+        "checkJs": true,        //js파일에 @ts-check코드를 추가한다.
+        "noImplicitAny": true,  //그 모든 함수, 변수 등등 any라는 타입이라도 넣어야한다.(타입체크를 한다.)
+    }
+}
