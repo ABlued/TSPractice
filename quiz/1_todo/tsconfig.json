@@ -2,7 +2,7 @@
   "compilerOptions": {
     "allowJs": true,
     "checkJs": true,
-    "noImplicitAny": false
+    "noImplicitAny": true   //모든 상수 변수 함수에 any라는 타입이라도 지정해라
   },
   "include": ["./src/**/*"]
 }
