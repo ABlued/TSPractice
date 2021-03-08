@@ -47,7 +47,7 @@ var obj1:StringRegexDictionary = {
     jsFile: /\.js$/,
 }
 // obj1['cssFile'] = 'a';        //정규식으로 초기화시켜야 한다.
-Object.keys(obj).forEach(function(value) {
+Object.keys(obj1).forEach(function(value) {
     
 });
 
