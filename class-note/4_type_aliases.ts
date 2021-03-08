@@ -5,12 +5,12 @@
 //     name:string;
 //     age: number;
 // }
-type Person = {
+type Person1 = {
     name:string;
     age: number;
 }
 
-var seho: Person ={
+var seho: Person1 ={
     name:'세호',
     age: 30
 }
