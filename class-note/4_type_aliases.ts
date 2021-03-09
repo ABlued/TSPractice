@@ -16,7 +16,7 @@ var seho: Person1 ={
 }
 
 type myString = string;
-var str:myString = 'hello';
+var str1:myString = 'hello';
 
 type Todo = {id: string; title:string, done: boolean};
 function getTodo(todo: Todo){};     //이런식으로 입력인자에도 넣을 수 있다.
