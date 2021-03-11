@@ -47,3 +47,14 @@ function logText4<T>(text:T):T{
 const str = logText4<string>('hi');     //이런식으로 <string>으로 선언해 들어가는 제네릭 타입이 string인 것을 알려줘야 한다.
 str.split('');      //그러면 string함수를 사용할 수 있다.
 const login = logText4<boolean>(true);      //제네릭 함수에 boolean 타입이 들어갈 것이라고 알려줘야 한다.
+
+// interface dropdown{
+//     value:string;
+//     selected: boolean;
+// }
+
+interface DropDown<T>{
+    value:T;
+    selected:boolean;
+}
+const obj5: DropDown<number> = {value:10, selected: false};     // 10인 number 제네릭타입에 넣었으므로 number라고 선언해야 한다.
