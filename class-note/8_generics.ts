@@ -58,3 +58,36 @@ interface DropDown<T>{
     selected:boolean;
 }
 const obj5: DropDown<number> = {value:10, selected: false};     // 10인 number 제네릭타입에 넣었으므로 number라고 선언해야 한다.
+
+// 제네릭의 타입 제한
+function logTextLength<T>(text:T[]):T[]{            //제네릭 타입을 배열로 선언해 length함수와 foreach함수를 무조건 쓸 수 있게 한다.(타입 제한)
+    console.log(text.length);
+    text.forEach(function(text){
+        console.log(text);
+    });
+    return text;
+}
+logTextLength<string>(['hi','abc']);
+// 정의된 타입으로 타입을 제한하기
+
+interface LengthType {
+    length: number;
+}
+function logTextLength1<T extends LengthType>(text:T):T{
+    text.length;
+    return text;
+}
+logTextLength1('a');        //문자열은 기본적으로 length속성이 있기 때문에 수용된다.
+// logTextLength1(10);      //숫자는 length속성이 없기 때문에 수용되지 않는다.
+logTextLength1({length:10});        //length속성이 있는 객체는 수용된다.
+
+// keyof로 제네릭의 타입 제한하기
+interface ShoppingItem {
+    name: string;
+    price: number;
+    stock: number;
+}
+function getShoppingItemOption<T extends keyof ShoppingItem>(itemOption: T): T{     //T extends keyof ShoppingItem을 해석하자면 ShoppingItem 객체의 키들중에 한가지를 제네릭으로 받는다.
+    return itemOption;
+}
+getShoppingItemOption('name');

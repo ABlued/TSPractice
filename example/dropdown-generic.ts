@@ -38,7 +38,13 @@ emails.forEach(function (email) {
   selectTag.appendChild(item);
 });
 
-/**   // createDropdownItem 함수 내에 유니온 타입 제거하는 방법
+/**
+ *    // createDropdownItem 함수 내에 유니온 타입 제거하는 방법
+ * interface Item<T> {
+  value: T;
+  selected: boolean;
+}
+
  * function createDropdownItem<T>(item: Item<T>): HTMLOptionElement {
   const option = document.createElement("option");
   option.value = item.value.toString();
