@@ -9,7 +9,7 @@ class Person5{
         this.age = age;
     }
 }
-
+const persona: Person5 = new Person5('amy',12);
 // 리액트 예전 문법
 // class App extends React.Component{
 

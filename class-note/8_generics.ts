@@ -40,7 +40,6 @@ function logText3(text: string | number){
 
 function logText4<T>(text:T):T{
     console.log(text);
-    //text.split('');       // 유니온 타입의 문제점은 string과 number의 교집합인 함수들만 사용할 수 있다는 것이다. split는 string함수이므로 여기서는 사용할수 없다.
     return text;
 }
 
@@ -79,7 +78,7 @@ function logTextLength1<T extends LengthType>(text:T):T{
 }
 logTextLength1('a');        //문자열은 기본적으로 length속성이 있기 때문에 수용된다.
 // logTextLength1(10);      //숫자는 length속성이 없기 때문에 수용되지 않는다.
-logTextLength1({length:10});        //length속성이 있는 객체는 수용된다.
+logTextLength1({length:10});        //length속성이 있는 객체도 수용된다.
 
 // keyof로 제네릭의 타입 제한하기
 interface ShoppingItem {

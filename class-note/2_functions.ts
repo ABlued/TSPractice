@@ -8,7 +8,7 @@ function add(a: number, b: number):number{
     return a + b;
 }
 
-function sum1(a: number, b = 100): number {
+function sum1(a: number, b = 100): number {     // b에 들어온 인자가 없으면 100으로 설정한다.
     return a + b;
 }
 console.log(sum1(20));
