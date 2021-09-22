@@ -5,7 +5,7 @@
 //   done:boolean;
 // };
 
-//인터페이스
+//인터페이스    // 겹치는 부분이 많을 때는 인터페이스로 정의해주자
 interface Todo {
   id:number;
   title:string;

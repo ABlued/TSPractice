@@ -1,10 +1,13 @@
-function logMessage(value: string | number){    //Union type : 두 가지 이상의 타입을 사용하고 싶을 때 유니온 타입을 사용한다.
+//Union type : 두 가지 이상의 타입을 사용하고 싶을 때 유니온 타입을 사용한다.
+function logMessage(value: string | number){
     console.log(value);
 }
 logMessage('hello');
 logMessage(100);
 
 var seho1 : string | number | boolean;
+
+// Union type을 사용하면 각각의 데이터타입마다 사용할 수 있는 api가 무엇인지 자동완성을 통해 알려준다.
 function logMessage1(value: string | number){
     if(typeof value === 'number'){
         value.toLocaleString();

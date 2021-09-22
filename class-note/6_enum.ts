@@ -21,7 +21,7 @@ enum Answer {
     No = 'N',
 }
 
-
+// 타입을 enum으로 지정하면 enum에서 정의한 타입만 사용할 수 있다.
 function askQuestion(answer: Answer){
     if(answer === Answer.Yes){
         console.log('정답입니다.');

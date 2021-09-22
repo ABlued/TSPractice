@@ -1,15 +1,15 @@
 // 타입 호환이란 타입스크립트 코드에서 특정 타입이 다른 타입에 잘 맞는지를 의미한다.
-interface Developer2{
+interface Developer4{
     name:string;
     skill:string;
 }
 
-interface Person2{
+interface Person4{
     name:string;
 }
 
-let developer : Developer2;
-let person : Person2;
+let developer : Developer4;
+let person : Person4;
 // developer = person;      // Developer2 안에 있는 속성 중에 Person2에 없는 속성이 있기 때문에 초기화할 수 없다.
 
 person = developer;     // Person2에 있는 속성들은 Developer2에 다 있기 때문에 초기화할 수 있다.
