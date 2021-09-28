@@ -10,6 +10,13 @@ class Person5{
     }
 }
 const persona: Person5 = new Person5('amy',12);
+
+// 위의 클래스 문법과 같다
+function PersonFunction(name,age) {
+    this.name = name;
+    this.age = age;
+}
+
 // 리액트 예전 문법
 // class App extends React.Component{
 

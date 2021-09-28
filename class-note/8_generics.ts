@@ -6,7 +6,8 @@ function logText(text){
 logText(10);    // 숫자 10
 logText('하이');    // 문자열 하이
 logText(true);      // 진위값 true
-
+// 제네릭은 호출하는 시점에 사용되는 인자의 타입을 함께 넘겨줘 
+// 한 함수안에 여러 타입을 받을 수 있게 해준다. 
 function logText1<T>(text:T):T{
     console.log(text);
     return text;
@@ -80,7 +81,7 @@ logTextLength1('a');        //문자열은 기본적으로 length속성이 있�
 // logTextLength1(10);      //숫자는 length속성이 없기 때문에 수용되지 않는다.
 logTextLength1({length:10});        //length속성이 있는 객체도 수용된다.
 
-// keyof로 제네릭의 타입 제한하기
+// keyof로 제네릭의 타입 제한하기(받는 타입에 들어있는 속성을 제한적으로 받는다.)
 interface ShoppingItem {
     name: string;
     price: number;
@@ -90,3 +91,8 @@ function getShoppingItemOption<T extends keyof ShoppingItem>(itemOption: T): T{ 
     return itemOption;
 }
 getShoppingItemOption('name');
+// 또는
+getShoppingItemOption("price");
+// 또는
+getShoppingItemOption("stock");
+// 가 들어갈 수 있다.

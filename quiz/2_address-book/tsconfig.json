@@ -4,7 +4,7 @@
     "checkJs": true,
     "target": "es5",
     "lib": ["es2015", "dom", "dom.iterable"],
-    "noImplicitAny": true,
+    "noImplicitAny": true,  // true로 설정하면 타입 속성에 적어도 any는 들어가야 한다.
     "strict": true,   //타입스크립트의 엄격한 조사
     "strictFunctionTypes": true,    //타입스크립트의 엄격한 함수 조사
   },
