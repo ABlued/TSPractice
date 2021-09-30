@@ -10,9 +10,9 @@ interface Person4{
 
 let developer : Developer4;
 let person : Person4;
-// developer = person;      // Developer2 안에 있는 속성 중에 Person2에 없는 속성이 있기 때문에 초기화할 수 없다.
+// developer = person;      // Developer4 안에 있는 속성 중에 Person4에 없는 속성이 있기 때문에 초기화할 수 없다.
 
-person = developer;     // Person2에 있는 속성들은 Developer2에 다 있기 때문에 초기화할 수 있다.
+person = developer;     // Person4에 있는 속성들은 Developer4에 다 있기 때문에 초기화할 수 있다.
 
 // 그래서 서로 다른 것을 초기화하려할 때 그 두 개의 객체는 타입이 호환이 되는지 생각하고 코딩해야한다.
 
