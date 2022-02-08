@@ -1,3 +1,9 @@
+/**
+ * 자바에서의 인터페이스는 클래스를 구현하기 전에 필요한 메서드를 정의하는 용도로 쓰이지만,
+ * 타입스크립트에서는 좀 더 다양한 것들을 정의하는 데 사용된다.
+ * 타입스크립트에서 인터페이스로 정의할 수 있는 타입의 종류와 인터페이스로 타입을 정의하는 방법을 알아보자
+ */
+
 // 인터페이스
 interface User {
   name: string;
@@ -39,3 +45,17 @@ interface Developer extends Person {
   language: string;
 }
 const joo: Developer = { name: 'joo', age: 20, language: 'ts' };
+
+// 읽기 전용 속성
+// 객체에서 읽기 전용 속성은 값이 변하지 않는 속성을 말한다.
+// 인터페이스에서 읽기 전용 속성은 다음과 같이 readonly 키워드를 사용한다.
+
+interface Person2 {
+  readonly name: string;
+  age?: number;
+}
+
+const p1: Person2 = {
+  name: 'mike', // 변수를 정의하는 시점에는 값을 할당할 수 있다.
+};
+// p1.name = 'jone';  // 읽기 전용 속성을 초기화할 수는 없다
